@@ -1,0 +1,38 @@
+Technical Overview
+
+AI-powered software engineering combines several technologies to assist developers throughout the development process.
+
+Core Technologies
+
+1. Machine Learning
+
+Machine Learning enables systems to identify patterns from data and support intelligent predictions.
+
+2. Natural Language Processing
+
+NLP enables AI systems to understand and process human language, allowing developers to communicate with coding assistants using natural-language instructions.
+
+3. Generative AI
+
+Generative AI produces content such as source code, documentation, and technical explanations.
+
+4. Large Language Models
+
+LLMs process programming instructions and generate context-aware responses, code suggestions, and explanations.
+
+5. AI Agents
+
+AI agents can perform multi-step tasks by using models, tools, and contextual information.
+
+6. Retrieval-Augmented Generation
+
+RAG retrieves relevant information from external knowledge sources and uses it to provide better-grounded responses.
+
+Working Process
+
+1. Developer provides a requirement.
+2. AI processes the natural-language input.
+3. The model generates suggestions or code.
+4. Developer reviews the generated output.
+5. Code is tested and validated.
+6. Approved changes are integrated into the application.
