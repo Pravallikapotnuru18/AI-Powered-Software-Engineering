@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Software Engineering</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #151f38;
+            padding: 22px;
+            text-align: center;
+        }
+
+        header h2 {
+            color: #8fa5ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            color: #8fa5ff;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            color: #c3cce0;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin: 35px 0;
+        }
+
+        .card {
+            background: #17233d;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #344467;
+        }
+
+        .card h3 {
+            color: #66dbc9;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #c3cce0;
+        }
+
+        .demo {
+            background: #17233d;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 13px;
+            margin: 12px 0;
+            border-radius: 7px;
+            border: 1px solid #455579;
+            background: #0b1020;
+            color: white;
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 110px;
+        }
+
+        button {
+            background: #8298ff;
+            color: #10162b;
+            padding: 13px 22px;
+            border: none;
+            border-radius: 7px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #66dbc9;
+        }
+
+        #output {
+            background: #0b1020;
+            border: 1px solid #455579;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            white-space: pre-wrap;
+            color: #dce5ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #151f38;
+            color: #aebbd5;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>AI & SOFTWARE ENGINEERING</h2>
+    <p>Innovation Through Intelligent Development</p>
+</header>
+
+<section class="hero">
+    <h1>The Future of Software Engineering</h1>
+    <h2>The Rise of AI-Powered Development</h2>
+
+    <p>
+        Artificial Intelligence is transforming modern software
+        engineering through intelligent coding, automated testing,
+        debugging and software development assistance.
+    </p>
+</section>
+
+<div class="container">
+
+    <h2>How AI Transforms Development</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>💻 AI Code Generation</h3>
+            <p>
+                AI assists developers in generating code from
+                natural-language instructions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🔍 Intelligent Debugging</h3>
+            <p>
+                AI helps identify programming errors and
+                suggests possible corrections.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚙️ Automated Testing</h3>
+            <p>
+                AI supports test-case generation and
+                software quality analysis.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 AI Agents</h3>
+            <p>
+                AI agents can coordinate multiple development
+                tasks with appropriate human supervision.
+            </p>
+        </div>
+
+    </div>
+
+    <section class="demo">
+
+        <h2>Interactive AI Development Assistant</h2>
+        <p>Explore a simulated AI-assisted development workflow.</p>
+
+        <select id="task">
+            <option value="code">Code Generation</option>
+            <option value="explain">Code Explanation</option>
+            <option value="debug">Debugging</option>
+            <option value="test">Software Testing</option>
+        </select>
+
+        <textarea id="prompt"
+            placeholder="Enter your programming requirement..."></textarea>
+
+        <button onclick="generateResponse()">
+            Generate Response
+        </button>
+
+        <div id="output">
+            Your sample response will appear here.
+        </div>
+
+        <p style="margin-top:15px;color:#aebbd5;font-size:13px">
+            Note: This is a predefined educational simulation,
+            not a live AI model integration.
+        </p>
+
+    </section>
+
+</div>
+
+<footer>
+    <p>AI-Powered Software Engineering | Technical Article Demo</p>
+    <p>Exploring the Future of Intelligent Software Development</p>
+</footer>
+
+<script>
+
+function generateResponse() {
+
+    let task = document.getElementById("task").value;
+    let prompt = document.getElementById("prompt").value.trim();
+    let output = document.getElementById("output");
+
+    if (prompt === "") {
+        output.innerText = "Please enter a programming requirement.";
+        return;
+    }
+
+    let responses = {
+
+        code:
+        "AI Code Generation Workflow:\n\n" +
+        "1. Understand the requirement.\n" +
+        "2. Identify the programming logic.\n" +
+        "3. Generate a code draft.\n" +
+        "4. Review and validate the code.\n\n" +
+        "Your request: " + prompt,
+
+        explain:
+        "Code Explanation Workflow:\n\n" +
+        "1. Identify the programming language.\n" +
+        "2. Understand variables and methods.\n" +
+        "3. Analyze conditions and loops.\n" +
+        "4. Explain the program step by step.\n\n" +
+        "Your request: " + prompt,
+
+        debug:
+        "Debugging Suggestions:\n\n" +
+        "1. Reproduce the error.\n" +
+        "2. Examine the error message.\n" +
+        "3. Check variables and conditions.\n" +
+        "4. Identify the possible cause.\n" +
+        "5. Test the correction.\n\n" +
+        "Your issue: " + prompt,
+
+        test:
+        "Software Testing Workflow:\n\n" +
+        "1. Identify expected behavior.\n" +
+        "2. Prepare test cases.\n" +
+        "3. Test normal inputs.\n" +
+        "4. Test boundary conditions.\n" +
+        "5. Validate the results.\n\n" +
+        "Your feature: " + prompt
+
+    };
+
+    output.innerText = responses[task];
+
+}
+
+</script>
+
+</body>
+</html>
