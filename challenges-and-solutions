@@ -1,0 +1,23 @@
+Challenges and Solutions in AI-Powered Development
+
+Challenge| Possible solution
+Incorrect AI-generated code| Human code review and testing
+Security vulnerabilities| Static analysis and security testing
+Data privacy risks| Data minimization and access controls
+Hallucinated responses| Grounding with trusted documentation
+Overdependence on AI| Maintain independent coding skills
+Integration complexity| Modular architecture and API standards
+High computational costs| Model selection and resource optimization
+
+Responsible AI Practices
+
+- Never expose passwords or API keys.
+- Review generated code before execution.
+- Validate outputs using appropriate tests.
+- Protect confidential project information.
+- Follow software licensing requirements.
+- Maintain human accountability for critical decisions.
+
+Conclusion
+
+AI adoption requires a balance between productivity and responsibility. Secure engineering practices and human supervision are essential for reliable AI-assisted development.
